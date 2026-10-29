@@ -1,0 +1,64 @@
+name: Spawn
+version: '1.0.0'
+main: org.minecraft.spawn.Spawn
+api-version: '1.21'
+
+commands:
+  setspawn:
+    description: Set the spawn location.
+    usage: /setspawn
+    permission: spawn.setspawn
+    permission-message: "You do not have permission to use this command"
+
+  spawn:
+    description: Teleport to spawn.
+    usage: /spawn
+    permission: spawn.spawn
+    permission-message: "You do not have permission to use this command"
+
+  delspawn:
+    description: Delete the current spawn location.
+    usage: /delspawn
+    permission: spawn.delspawn
+    permission-message: "You do not have permission to use this command"
+
+permissions:
+  spawn.*:
+    description: Grants the user all spawn permissions
+    default: op
+    children:
+      spawn.setspawn: true
+      spawn.spawn: true
+      spawn.delspawn: true
+      spawn.spawn.gui: true
+      spawn.spawn.overworld: true
+      spawn.spawn.nether: true
+      spawn.spawn.end: true
+
+  spawn.setspawn:
+    description: Allows the user to set the spawn.
+    default: op
+
+  spawn.spawn:
+    description: Allows the user to teleport to spawn.
+    default: op
+
+  spawn.spawn.overworld:
+    description: Allows the user to teleport to the overworld from any dimension.
+    default: op
+
+  spawn.spawn.nether:
+    description: Allows the user to teleport to the nether from any dimension.
+    default: op
+
+  spawn.spawn.end:
+    description: Allows the user to teleport to the end from any dimension.
+    default: op
+
+  spawn.delspawn:
+    description: Allows the user to delete the spawn of their current dimension.
+    default: op
+
+  spawn.spawn.gui:
+    description: Allows the user to use the spawn gui.
+    default: op

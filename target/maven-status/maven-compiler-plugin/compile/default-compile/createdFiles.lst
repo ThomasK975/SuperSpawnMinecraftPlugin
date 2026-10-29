@@ -1,0 +1,8 @@
+org\minecraft\spawn\Spawn.class
+org\minecraft\spawn\DeleteSpawn.class
+org\minecraft\spawn\SpawnCommand.class
+org\minecraft\spawn\SetSpawnCommand.class
+org\minecraft\spawn\CooldownInfo.class
+org\minecraft\spawn\threeItems.class
+org\minecraft\spawn\MovementListener.class
+org\minecraft\spawn\twoItems.class

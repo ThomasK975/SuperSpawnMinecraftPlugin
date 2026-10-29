@@ -1,0 +1,12 @@
+spawn:
+    worlds:
+        overworld:
+        nether:
+        end:
+
+    delay:
+        use-delay: false
+        delay-seconds: 3
+
+
+
